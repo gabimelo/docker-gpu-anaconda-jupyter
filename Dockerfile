@@ -1,4 +1,4 @@
-FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
+FROM nvidia/cuda:9.1-cudnn7-runtime
 
 LABEL maintainer 's@muelcolvin.com'
 
