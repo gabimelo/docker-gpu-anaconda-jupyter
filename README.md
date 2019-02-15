@@ -1,5 +1,9 @@
 # tensorflow-gpu-py36-jupyter
-Dockerfile for Docker container with Tensorflow installed with GPU compatibility, for Python 3.6. Runs Jupyter notebook.
+Dockerfile for Docker container with TensorFlow installed with GPU compatibility, for Python 3.6. Runs Jupyter notebook.
+
+Based off https://hub.docker.com/r/samuelcolvin/tensorflow-gpu-py36/dockerfile
+
+For the moment, it's using old versions of CUDA (8) and TensorFlow (1.3).
 
 ---
 
