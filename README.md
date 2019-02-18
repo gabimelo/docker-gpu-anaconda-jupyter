@@ -1,8 +1,6 @@
 # docker-gpu-anaconda-jupyter
 Dockerfile for Docker container with GPU compatibility. Creates an Anaconda Env, from which Jupyter Noteboook runs.
 
-Current issue: notebook executes in correct environment, but installed packages seem not to be present.
-
 ---
 
 To run it, build with:
