@@ -32,8 +32,8 @@ RUN conda install ipykernel
 RUN conda create -y -n jupyter_env python=3.6 tensorflow-gpu cudatoolkit=9.0 keras pip jupyter jupyterlab nb_conda_kernels
 
 RUN echo "source activate jupyter_env" > ~/.bashrc
-#ENV PATH /opt/conda/envs/jupyter_env/bin:$PATH
 
+ENV PATH /opt/conda/envs/jupyter_env/bin:$PATH
 RUN python -m ipykernel install --user --name jupyter_env --display-name "Python (jupyter_env)"
 
 WORKDIR "/notebooks"
