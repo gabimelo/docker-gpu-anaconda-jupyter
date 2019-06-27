@@ -1,4 +1,3 @@
-
 FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
@@ -11,7 +10,7 @@ RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificate
 #Downgrade CUDA, TF issue: https://github.com/tensorflow/tensorflow/issues/17566#issuecomment-372490062
 RUN apt-get install --allow-downgrades --allow-change-held-packages -y libcudnn7=7.0.5.15-1+cuda9.0
 
-RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh -O ~/anaconda.sh && \
+RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh -O ~/anaconda.sh && \
     /bin/bash ~/anaconda.sh -b -p /opt/conda && \
     rm ~/anaconda.sh && \
     ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
